@@ -9,6 +9,7 @@
 int main(void) {
     char infix[MAX] , postfix[MAX];
 
+    printf("Enter infix expression: ");
     printf("Enter Infix Expression: ");
     scanf("%s", infix);
     infixToPrefix(infix, postfix);
