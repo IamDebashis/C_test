@@ -8,4 +8,9 @@ add_executable(C_test main.c
         stack/Stack.h
         stack/Stack.c
         infixPrefix/InfixPrefix.h
+        tree/TreeQueue.h
+        tree/Tree.c
+        tree/TreeStack.h
+        tree/TreeNode.h
+        avlTree/AvlTree.c
 )

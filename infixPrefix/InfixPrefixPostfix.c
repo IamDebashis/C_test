@@ -31,7 +31,7 @@ int precedence(char c) {
 
 void infixToPostfix(char *infix, char *postfix) {
     const int len = strlen(infix);
-    Stack s;
+    struct Stack s;
     initStack(&s);
     int j = 0;
     int i;

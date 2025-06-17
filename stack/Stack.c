@@ -1,4 +1,4 @@
-//
+ //
 // Created by Debashis on 11/06/25.
 //
 
@@ -9,19 +9,19 @@
 
 
 
-void initStack(Stack *s) {
+void initStack(struct Stack *s) {
     s->top = -1;
 }
 
-int isEmptyStack(Stack *s) {
+int isEmptyStack(struct Stack *s) {
     return s->top == -1;
 }
 
-int isFullStack(Stack *s) {
+int isFullStack(struct Stack *s) {
     return s->top == MAX - 1;
 }
 
-void push(Stack *s, char data) {
+void push(struct Stack *s, char data) {
     if (isFullStack(s)) {
         printf("Stack is full\n");
         return;
@@ -30,7 +30,7 @@ void push(Stack *s, char data) {
 
 }
 
-char pop(Stack *s) {
+char pop(struct Stack *s) {
     if (isEmptyStack(s)) {
         printf("Stack is empty\n");
         return -1;
@@ -39,7 +39,7 @@ char pop(Stack *s) {
 
 }
 
-char peek(Stack *s) {
+char peek(struct Stack *s) {
     if (isEmptyStack(s)) {
         printf("Stack is empty\n");
         return -1;

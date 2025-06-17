@@ -6,7 +6,7 @@
 
 
 
-int main(void) {
+int main2(void) {
     char infix[MAX] , postfix[MAX];
 
     printf("Enter infix expression: ");
@@ -15,7 +15,7 @@ int main(void) {
     infixToPrefix(infix, postfix);
 
     printf("Postfix Expression: %s\n", postfix);
-    Stack s;
+    struct  Stack s;
     initStack(&s);
    printf("%c",peek(&s));
     printf("%d",isalnum('a'));

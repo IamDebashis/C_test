@@ -6,17 +6,18 @@
 #define STACK_H
 #define MAX 100
 
-typedef struct {
+
+ struct Stack{
     char data[MAX];
     int top;
-}Stack;
+};
 
 
-void initStack(Stack *s);
-void push(Stack *s, char x);
-char pop(Stack *s);
-int isEmptyStack(Stack *s);
-int isFullStack(Stack *s);
-char peek(Stack *s);
+void initStack(struct Stack *s);
+void push(struct Stack *s, char x);
+char pop(struct Stack *s);
+int isEmptyStack(struct Stack *s);
+int isFullStack(struct Stack *s);
+char peek(struct Stack *s);
 
 #endif //STACK_H
